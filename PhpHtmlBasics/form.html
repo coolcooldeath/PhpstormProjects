@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<form name="test" method="post" action="form.php">
+    <div><b>Ваши имя и фамилия:</b><br>
+        <input type="text" required="required" name="name" size="40">
+        <Br>
+        <Br>
+        <input type="text"  required="required" name="surname" size="40">
+    </div>
+    <div ><b>Язык программирования который вы изучаете?</b><Br>
+        <input type="radio" required="required"  name="lang" value="c#"> C#<Br>
+        <input type="radio" name="lang" value="java"> Java<Br>
+        <input type="radio" name="lang" value="php"> Php <Br>
+    </div>
+    <div><b>Сколько вы занимаетесь изучением этого языка?</b><Br>
+        <select name="period" multiple size="4">
+            <option value=">1">Больше года</option>
+            <option value="<1">Меньше года</option>
+            <option value=">2">Больше 2 лет</option>
+            <option value=">5">Больше 5 лет</option>
+        </select>
+    </div>
+    <div><b>Ваш пол?</b><Br>
+        <input type="radio" required="required" name="sex" value="men">Мужской<Br>
+        <input type="radio" name="sex" value="women">Женский<Br>
+    </div>
+
+    <div>Ваш комментарий <Br>
+        <textarea name="comment" cols="40" rows="3"></textarea></div>
+    <div><input type="submit" value="Отправить">
+        <input type="reset" value="Очистить"></div>
+</form>
+
+</body>
+</html>
